@@ -1,15 +1,20 @@
 
 import './App.css';
-import Counter from './components/Counter';
-import HookCounterFour from './components/HookCounterFour';
-import HookCounterThree from './components/HookCounterThree';
+import DataFetching from './components/DataFetching';
+import HookCounterOne from './components/HookCounterOne';
+// import IntervalHookCounter from './components/IntervalHookCounter';
+// import Counter from './components/Counter';
+// import HookCounterFour from './components/HookCounterFour';
+// import HookCounterThree from './components/HookCounterThree';
 
 function App() {
   return (
     <div className="App">
- <Counter/>
+ {/* <IntervalHookCounter/> */}
+ <DataFetching/>
+ {/* <Counter/>
  <HookCounterThree/>
- <HookCounterFour/>
+ <HookCounterFour/> */}
     </div>
   );
 }
