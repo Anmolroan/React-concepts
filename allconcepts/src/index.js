@@ -4,13 +4,17 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ThemeContextProvider from './contexts/ThemeContext';
+import LoveContextProvider from './contexts/LoveContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+  <LoveContextProvider>
   <ThemeContextProvider>
   <App />
   </ThemeContextProvider>
+  </LoveContextProvider>
+ 
    
   </React.StrictMode>
 );
