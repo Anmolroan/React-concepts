@@ -5,15 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ThemeContextProvider from './contexts/ThemeContext';
 import LoveContextProvider from './contexts/LoveContext';
+import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+ 
   <LoveContextProvider>
   <ThemeContextProvider>
+  <BrowserRouter>
   <App />
+  </BrowserRouter>
   </ThemeContextProvider>
   </LoveContextProvider>
+
  
    
   </React.StrictMode>
